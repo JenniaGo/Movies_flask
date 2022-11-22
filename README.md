@@ -7,4 +7,4 @@ Flask web app with movies search and reviews CRUD, sqlite as DB, and TMDB api
 2) navigate to [https://www.themoviedb.org/settings/api](https://www.themoviedb.org/settings/api) 
 
 # Demo:
-![Projectdemo][https://drive.google.com/file/d/1LraPkjmspgllW3KsOXNXA__M1fhr7Cst/view]
+![Projectdemo](https://drive.google.com/file/d/1LraPkjmspgllW3KsOXNXA__M1fhr7Cst/view)
