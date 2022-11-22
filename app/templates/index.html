@@ -1,0 +1,38 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+<!-- Styles block -->
+{% block title %}
+Welcome to Yevgeny Movies App
+{% endblock %}
+{% block body %}
+    <!--### Search bar-->
+<div class="container" style="padding-bottom: 25px;">
+    <form style="display: flex;">
+        <input type="text" name="movie_query" placeholder="Search for a Movie" class="form-control">
+        <input type="submit"  value="Submit" class="btn btn-outline-primary my-2 my-sm-0">
+    </form>
+</div>
+<!-- Popular movie -->
+<div class="container">
+    <h3 class="text-center"> Popular Movies</h3>
+    <div class="grid-container">
+        {{ macro.displayMovieList(popular)}}
+    </div>
+</div>
+    <!-- Upcoming movie  -->
+<div class="container">
+    <hr>
+    <h3 class="text-center"> Upcoming Movies </h3>
+    <div class="grid-container">
+        {{ macro.displayMovieList(upcoming)}}
+    </div>
+</div>
+    <!-- Now showing movie -->
+<div class="container">
+    <hr>
+    <h3 class="text-center">Now Showing</h3>
+    <div class="grid-container">
+        {{ macro.displayMovieList(now_showing)}}
+    </div>
+</div>
+{% endblock%}

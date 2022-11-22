@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-6">
+            <a href="/movie/{{movie.id}}"><img src="{{movie.poster}}" alt="{{movie.title}}" class="img-responsive"></a>
+        </div>
+        <div class="col-md-5">
+            <h1>{{ movie.title }}</h1>
+          <div class="container mt-5">
+            <h3>Add New Article</h3>
+            <form method="post">
+              <input type="text" name="title" id="title" class="form-control" placeholder="Review Title"><br>
+              <textarea name="review" id="intro" class="form-control" rows="7" placeholder="Write here your Review"></textarea><br>
+              <textarea name="user_name" id="text" class="form-control" placeholder="Your name please"></textarea><br>
+              <input type="submit" class="btn btn-success" value="Send">
+            </form>
+          </div>
+        </div>
+    </div>
+        </div>
+{% endblock %}

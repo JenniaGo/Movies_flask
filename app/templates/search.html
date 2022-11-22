@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+{% block body %}
+    <div class="container">
+        {%  if movies %}
+        <div class="container">
+            <h3> Found {{ movies| count }} matches </h3>
+        <div class="grid-container">
+                {{ macro.displayMovieList(movies)}}
+        </div>
+        {% else %}
+        <div class="container">
+            <h3> Sorry, didn't find any matches </h3>
+        </div>
+        {% endif %}
+    </div>
+{% endblock %}
